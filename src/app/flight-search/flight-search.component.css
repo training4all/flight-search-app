@@ -1,0 +1,36 @@
+  mat-form-field {
+    flex-direction: row;
+    justify-content: center;
+    margin-left:10px;
+    width: 300px;
+    height: 75px;
+    float: left;
+  }
+
+  mat-form-field input {
+    width: 80%;
+  }
+
+  mat-form-field mat-icon {
+    width: 15%;
+  }
+
+  .mat-icon {
+      height: 15px;
+  }
+
+  .search-button {
+    margin-left: 10px;
+    width: 80px;
+    cursor: pointer;
+    color: #1976d2;
+    flex-direction: row;
+    justify-content: center;
+    height: 75px;
+    float: left;
+  }
+
+  .search-button  .mat-icon{
+    height: 60px;
+    width: 80px;
+  }

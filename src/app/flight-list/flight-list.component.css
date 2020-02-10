@@ -1,0 +1,26 @@
+table {
+    height: 800px;
+    width: 100%;
+  }
+
+  .flight-list-container{
+    height: 600px;
+    width: 1000px;
+    float: left;
+    overflow-y: scroll;
+    border: solid lightgrey;
+    margin-left: -115px;
+    margin-top: 10px;
+ }
+
+ .filter {
+     width: 100%;
+ }
+
+.spinner-container {
+    height: 600px;
+    width: 1000px;
+    float: centre;
+    margin-left: 600px;
+    margin-top: 60px;
+}

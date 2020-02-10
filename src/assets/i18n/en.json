@@ -1,0 +1,22 @@
+{
+    "flight-search" :{
+        "departureAirportCode" : "Departure Airport Code",
+        "max3Characters": "Max 3 Characters",
+        "max3CharactersError": "Max 3 Alphanumeric Characters",
+        "arrivalAirportCode" : "Arrival Airport Code",
+        "departureDate" : "Departure Date",
+        "departure" : "Departure",
+        "dateError": "Provide valid date",
+        "returnDate" : "Return Date",
+        "return" : "Return",
+        "dateValidationError": "Return Date should be on or after Departure Date"
+    },
+    "flight-list": {
+        "filter": "Filter",
+        "logo" : "Logo",
+        "name": "Name",
+        "outboundDuration": "Outbound Duration",
+        "inboundDuration": "Inbound Duration",
+        "totalAmount": "Total Amount"
+    }
+}

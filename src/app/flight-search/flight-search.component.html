@@ -1,0 +1,43 @@
+<div class="basic-container" [formGroup]="FlightForm">
+    <mat-form-field>
+        <mat-label [translate]="'flight-search.departureAirportCode'"></mat-label>
+        <input matInput placeholder="{{'flight-search.max3Characters' | translate}}" maxlength="3"
+            formControlName="DepartureCode">
+        <mat-icon svgIcon="flight_takeoff" aria-hidden="false" aria-label="Flight Search"></mat-icon>
+        <mat-error *ngIf="FlightForm.get('DepartureCode').hasError('invalid')"
+            [translate]="'flight-search.max3CharactersError'"></mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label [translate]="'flight-search.arrivalAirportCode'"></mat-label>
+        <input matInput placeholder="{{'flight-search.max3Characters' | translate}}" maxlength="3"
+            formControlName="ArrivalCode">
+        <mat-icon svgIcon="flight_land" aria-hidden="false" aria-label="Flight Search"></mat-icon>
+        <mat-error *ngIf="FlightForm.get('ArrivalCode').hasError('invalid')"
+            [translate]="'flight-search.max3CharactersError'"></mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label [translate]="'flight-search.departureDate'"></mat-label>
+        <input matInput [matDatepicker]="departure" placeholder="{{'flight-search.departure' | translate}}"
+            formControlName="DepartureDate" [min]="minDate" (blur)="validateReturnDate()">
+        <mat-datepicker-toggle matSuffix [for]="departure"></mat-datepicker-toggle>
+        <mat-datepicker #departure></mat-datepicker>
+        <mat-error *ngIf="FlightForm.get('DepartureDate').hasError('invalid')" [translate]="'flight-search.dateError'">
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label [translate]="'flight-search.returnDate'"></mat-label>
+        <input matInput [matDatepicker]="returnDate" placeholder="{{'flight-search.return' | translate}}"
+            formControlName="ReturnDate" [min]="minDate" (blur)="validateReturnDate()">
+        <mat-datepicker-toggle matSuffix [for]="returnDate"></mat-datepicker-toggle>
+        <mat-datepicker #returnDate></mat-datepicker>
+        <mat-error *ngIf="FlightForm.get('ReturnDate').hasError('invalid')" [translate]="'flight-search.dateError'">
+            </mat-error>
+    </mat-form-field>
+
+    <div class="search-button">
+        <mat-icon svgIcon="search" aria-hidden="false" aria-label="Flight Search" (click)="search()"></mat-icon>
+    </div>
+</div>

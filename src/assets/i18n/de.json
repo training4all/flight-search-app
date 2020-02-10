@@ -1,0 +1,22 @@
+{
+    "flight-search" :{
+        "departureAirportCode" : "Code des Abflughafens",
+        "max3Characters": "Maximal 3 Zeichen",
+        "max3CharactersError": "Maximal 3 alphanumerische Zeichen",
+        "arrivalAirportCode" : "Ankunftsflughafen Code",
+        "departureDate" : "Abreisedatum",
+        "departure" : "Abfahrt",
+        "dateError": "Geben Sie ein gültiges Datum an",
+        "returnDate" : "Rückflugdatum",
+        "return" : "Rückkehr",
+        "dateValidationError": "Rückkehr Datum sollte Sein auf oder nach Abfahrt Datum"
+    },
+    "flight-list": {
+        "filter": "Filter",
+        "logo" : "Logo",
+        "name": "Name",
+        "outboundDuration": "Ausgehend Dauer",
+        "inboundDuration": "Eingehende Dauer",
+        "totalAmount": "Gesamtsumme"
+    }
+}

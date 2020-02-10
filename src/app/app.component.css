@@ -1,0 +1,32 @@
+.spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    height: 60px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar mat-icon {
+    margin: 0 16px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .language {
+      margin-left: 50px;
+      margin-top:5px;
+      float: right;
+      display: flex;
+      flex-wrap: wrap;
+  }
